@@ -31,3 +31,19 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }   
+
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
