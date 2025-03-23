@@ -1,0 +1,126 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #124e78;
+    --secondary-color: #f2bb05;
+    --accent1-color: #519872;
+    --accent2-color: #832161;
+    --text-font: 'Raleway', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--text-font);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--accent1-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* Social Media Links */
+nav.sociallinks a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav.sociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+nav.sociallinks a img {
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+nav.sociallinks a img:hover {
+    transform: scale(1.1);
+}
