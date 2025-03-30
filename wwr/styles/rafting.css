@@ -12,12 +12,12 @@
 body {
     font-family: var(--text-font);
     margin: 0;
-    padding: 0;
+    padding: 0 60px;
     max-width: 1200px;
     margin: auto;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6  {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -28,25 +28,51 @@ p {
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
+
+    /*add*/
+    display: grid;
+    grid-template-columns: repeat(2,35%);
+    justify-content: space-evenly;
+}
+
+
+/*add*/
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/*add*/
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+
+    /*add*/
+    border: solid 1.5px var(--accent1-color);
+    padding: 5px 12px;
 }
+
+
+
 
 /* Hero Section */
 .hero {
     position: relative;
-    text-align: center;
+    /*text-align: center;*/
+    /*add*/
+    width: 100%;
 }
 
 .hero img {
@@ -84,6 +110,67 @@ nav a {
     border-radius: 5px;
 }
 
+/*ADD NEW SECTION STYLE CLASS=history*/
+
+.history{
+    margin: 20px 0;
+    display: flex;
+}
+
+.history h2{
+    display: block;
+    justify-content: center;
+    display: flex;
+}
+
+.history div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history p{
+    padding: 45px 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.adventure{
+    max-width: 100%;
+    display: block;
+    justify-content: space-around;
+}
+
+
+.adventure h2{
+    display: block;
+    justify-content: center;
+    display: flex;
+}
+
+.adventure div{
+    display: grid;
+
+    /*REVIEW THIS LINE*/
+    grid-template-columns: 260px 260px 260px 260px 260px;
+}
+
+.adventure img{
+    width: 210px;
+    height: 140px;
+}
+
+.adventure figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ADD NEW SECTION STYLE CLASS=history*/
+
+
+
 /* Social Media Links */
 nav.sociallinks a {
     text-decoration: none;
@@ -107,7 +194,12 @@ footer p {
     width: 100%;
 }
 
-nav.sociallinks {
+footer div{
+    position: absolute;
+    right: 100px;
+}
+
+div.sociallinks {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,12 +207,12 @@ nav.sociallinks {
     width: 100%;
 }
 
-nav.sociallinks a img {
+div.sociallinks a img {
     width: 25px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
-nav.sociallinks a img:hover {
+div.sociallinks a img:hover {
     transform: scale(1.1);
 }
