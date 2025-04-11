@@ -83,7 +83,7 @@ nav a {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -94,11 +94,12 @@ nav a {
 
 .hero article {
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    bottom: 3%;
+    left: 3%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    max-width: 400px;
+    max-width: 300px;
+    max-height: 250px;
     border-radius: 5px;
 }
 
@@ -625,29 +626,7 @@ main > h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   }
   
-  .hero article {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
   
-  .hero article img {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  
-  .hero article p {
-    max-width: 800px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
-  }
   
   
   /* HISTORY Section */
